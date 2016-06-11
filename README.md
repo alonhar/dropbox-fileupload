@@ -4,7 +4,8 @@ usage:
 ------
   use cli command to upload file to dropbox.
   
-    `node upload-dropbox-cli.js <localFile> <remotePath> <token>`
+    node upload-dropbox-cli.js <localFile> <remotePath> <token>
+    
       
  ```
  var uploadFile = require('./dropbox-upload');
