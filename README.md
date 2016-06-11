@@ -11,13 +11,13 @@ usage:
 ------
   use cli command to upload file to dropbox.
   
-    dropbox-upload <localFile> <remotePath> <token>
+    dropbox-upload <localFilePath> <remotePath> <token>
     
       
  ```
 
  var uploadFile = require('dropbox-upload');
- uploadFile(localFile,remotePath,token,callback);
+ uploadFile(localFilePath,remotePath,token,callback);
 ```
   
 Create new app in dropbox and generate  OAuth 2 token, This value is the token. 
