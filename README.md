@@ -1,5 +1,12 @@
 Upload file to dropbox. 
 ========================
+
+install:
+------
+  ```
+npm install dropbox
+npm install dropbox-upload -g //for cli
+   ```
 usage:
 ------
   use cli command to upload file to dropbox.
@@ -8,7 +15,8 @@ usage:
     
       
  ```
- var uploadFile = require('./dropbox-upload');
+
+ var uploadFile = require('dropbox-upload');
  uploadFile(localFile,remotePath,token,callback);
 ```
   
