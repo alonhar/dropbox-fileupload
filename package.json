@@ -1,6 +1,6 @@
 {
   "name": "dropbox-upload",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "upload file to dropbox",
   "main": "dropbox-upload.js",
   "bin": {
