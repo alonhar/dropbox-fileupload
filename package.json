@@ -1,10 +1,14 @@
 {
   "name": "dropbox-upload",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "upload file to dropbox",
   "main": "dropbox-upload.js",
   "bin": {
     "dropbox-upload": "upload-dropbox-cli.js"
+  },
+ "repository": {
+    "type": "git",
+    "url": "https://github.com/alonhar/dropbox-fileupload"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
