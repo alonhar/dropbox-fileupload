@@ -1,12 +1,15 @@
 {
   "name": "dropbox-upload",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.3",
+  "description": "upload file to dropbox",
   "main": "dropbox-upload.js",
+  "bin": {
+    "dropbox-upload": "upload-dropbox-cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Alon Harel",
   "license": "ISC",
   "dependencies": {
     "request": "^2.72.0"

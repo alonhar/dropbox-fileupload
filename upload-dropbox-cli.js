@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 var token     = process.argv[4];
 var localPath  = process.argv[2];
