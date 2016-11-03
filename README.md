@@ -4,7 +4,7 @@ Upload file to dropbox.
 install:
 ------
   ```
-npm install dropbox
+npm install dropbox-upload
 npm install dropbox-upload -g //for cli
    ```
 usage:
