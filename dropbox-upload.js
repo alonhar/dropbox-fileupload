@@ -15,13 +15,16 @@ fs.readFile(localPath, function read(err, data) {
 		console.log(err);
 		return ;
 	}
-	request.put(
-		    'https://api-content.dropbox.com/1/files_put/auto' + remotePath,
+	request.post(
+		    'https://content.dropboxapi.com/2/files/upload',
 			{
-				      headers: { Authorization: 'Bearer ' + token  },
-					        body: data
+				      headers: { Authorization: 'Bearer ' + token,
+					  			 "Dropbox-API-Arg": JSON.stringify({"path": remotePath,"mode": "add","autorename": true,"mute": false}),
+					        "Content-Type": "application/octet-stream"}, 
+								 body: data
 							    
 			}, function(err, httpResponse, bodymsg) {
+			
 				if (err || bodymsg.indexOf("error")>-1) {
 					 		 
 							callback({err:err,bodymsg:bodymsg});
