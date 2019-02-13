@@ -24,19 +24,12 @@ fs.readFile(localPath, function read(err, data) {
 								 body: data
 							    
 			}, function(err, httpResponse, bodymsg) {
-			
-				if (err || bodymsg.indexOf("error")>-1) {
-					 		 
-							callback({err:err,bodymsg:bodymsg});
-							      
-				}else{
-					if (callback){
-				
-					callback();
-					
-					}
-	
-				}				    
+
+                    callback({
+                        err:err,
+                        httpResponse:httpResponse,
+                        bodymsg:bodymsg
+                    });
 			}
 			  
 	);
