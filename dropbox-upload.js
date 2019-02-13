@@ -21,7 +21,8 @@ fs.readFile(localPath, function read(err, data) {
 				      headers: { Authorization: 'Bearer ' + token,
 					  			 "Dropbox-API-Arg": JSON.stringify({"path": remotePath,"mode": "add","autorename": true,"mute": false}),
 					        "Content-Type": "application/octet-stream"}, 
-								 body: data
+                     body: data,
+                     json: true
 							    
 			}, function(err, httpResponse, bodymsg) {
 
